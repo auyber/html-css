@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+/*
+  .passion-one-regular {
+  font-family: "Passion One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.passion-one-bold {
+  font-family: "Passion One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.passion-one-black {
+  font-family: "Passion One", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+/*
+  .sriracha-regular {
+  font-family: "Sriracha", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
+:hover {
+  --fonte01: Verdana, cursive, sans-serif;
+  --fonte02: 'Passion One', cursive;
+  --fonte03: 'Sriracha', cursive;  
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+header {
+  background-color: black;
+
+}
+
+h1 {
+  font-family: var(--fonte02);
+  font-size: 79px;
+  font-style: bold;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}
+
+header > p {
+  color: white;
+  text-align: center;
+  padding-bottom: 50px;
+  font-family: var(--fonte01);
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+main {
+  font-family: var(--fonte03);
+  font-style: bold;
+  font-size: 2em;
+}
+
+div {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+.p2 {
+  background-image: url(../imagens/background001.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+
+}
+
+.p2 > p {
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0));
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  
+}
+
+.p4 {
+  background-image: url(../imagens/background002.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+.p4 > p {
+  background-image: linear-gradient(to right,rgba(0, 0, 0, 0.438), rgba(0, 0, 0, 0));
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  font-style: var(--fonte01);
+  font-size: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
