@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formuário</h1>
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Gênero</legend>
+            <input type="radio" name="gen" id="imas" value="m">Masculino <br>
+            <input type="radio" name="gen" id="ifem" value="f">Feminino
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut">Futebol (sem o label)<br>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esvol" id="iesvol">Vôlei (sem o label)<br>
+            <input type="checkbox" name="essur" id="iessur"> <label for="iessur">Surf</label> <br>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
