@@ -2,3 +2,80 @@
 
 /* Todas as demais midias */
 
+/* typical Device Breakpoints
+----------------------------
+Pequenas Telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768 até 992px
+Desktop: 992 px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+/*Não foi feito media para celular porque usamos o Mobile First */
+
+@media print { /*impressão*/
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    body {
+        background-image: url(../imagens/back-print.jpg); /*desnecessário */
+        
+    }
+
+    main {
+    border: 2px solid black;
+}
+
+    main::after {
+        content: 'Essa impressão foi feita através do site cursoemvideo.com';
+        text-decoration: overline;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /*Tablet*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg)
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: block;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: none;}
+
+}
+
+@media screen and (min-width:992px) and (max-width: 1200px) { /*Desktop*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: block;}
+    img#tv {display: none;}
+
+}
+
+@media screen and (min-width: 1200px) { /* Tela grande*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    img#phone {display: none;}
+    img#tablet {display: none;}
+    img#print {display: none;}
+    img#pc {display: none;}
+    img#tv {display: block;}
+}
