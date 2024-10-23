@@ -26,12 +26,12 @@ header {
 }
 
 header > h1 {
-    border: 1px dotted black;
+    /*border: 1px dotted black; apenas usado para marcar a caixa*/
     flex: 0 0 200px;
 }
 
 header > nav {
-    border: 1px dotted black;
+    /*border: 1px dotted black; apenas usado para marcar a caixa*/
     
     display: flex;
     flex-flow: row wrap;
